@@ -1,9 +1,47 @@
+body {
+    margin: auto 0;
+}
+
 .container-tiles{
-    background-color: #c5c2c2;
+    background-color: #e1dbdb
 }
 
 .tiles{
+    
     display:grid;
-    gap:20 px;
+    gap:40px ;
     grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    
 }
+
+.zone {
+     padding:70px 50px;
+     margin:40px 60px;
+     cursor:pointer;
+     background: #d8d2d2;
+     /*display:inline-block;
+     color:#FFF;
+     font-size:2em;*/
+     border-radius:4px;
+     border:1px solid #bbb;
+     transition: all 0.3s linear;
+     
+}
+
+ .zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+ 
+.profile {
+     padding: 90px 70px;
+}
+
+.box > img/*all childs*/ {
+    width: 100%;
+}
+
+
