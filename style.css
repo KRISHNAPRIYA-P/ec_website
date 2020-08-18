@@ -40,7 +40,7 @@ body {
      padding: 90px 70px;
 }
 
-.box > img/*all childs*/ {
+.box > img/*all childs*/{
     width: 100%;
 }
 
