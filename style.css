@@ -18,14 +18,20 @@ body {
      padding:70px 50px;
      margin:40px 60px;
      cursor:pointer;
-     background: #d8d2d2;
      /*display:inline-block;
      color:#FFF;
      font-size:2em;*/
      border-radius:4px;
      border:1px solid #bbb;
      transition: all 0.3s linear;
-     
+  
+    background: #d8d2d2; /* Old browsers */
+    background: -moz-linear-gradient(top, #a5a3a3 0%, #d8d2d2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5a3a3), color-stop(100%,#d8d2d2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a5a3a3 0%,#d8d2d2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #a5a3a3 0%,#d8d2d2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #a5a3a3 0%,#d8d2d2 100%); /* IE10+ */
+    background: linear-gradient(top, #a5a3a3 0%,#d8d2d2 100%); /* W3C */
 }
 
  .zone:hover {
