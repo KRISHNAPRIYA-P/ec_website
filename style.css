@@ -67,6 +67,13 @@ hr{
     width: 100%;
 }
 
+.box > span {
+  color: #0000ff;
+}
+    
+
+
+
 
 #stage {
   position: relative;
