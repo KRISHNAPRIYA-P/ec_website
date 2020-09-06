@@ -25,11 +25,11 @@ hr{
 }
 
 .zone {
-     padding-top:70px ;
-     padding-bottom: 70px;
-     padding-right: 50px;
-     padding-left:50px;
-     margin:40px 60px;
+     padding-top:10px ;
+     padding-bottom:30px;
+     padding-right: 1px;
+     padding-left:1px;
+     margin:50px 120px;
      cursor:pointer;
      /*display:inline-block;
      color:#FFF;
@@ -46,6 +46,12 @@ hr{
     /*background: -ms-linear-gradient(top, #a5a3a3 0%,#d8d2d2 100%); /* IE10+ */
     /*background: linear-gradient(top, #a5a3a3 0%,#d8d2d2 100%); /* W3C */
 }
+.zone {
+  display: flex;
+  justify-content: center;
+}
+
+
 
  .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -55,25 +61,24 @@ hr{
 }
 
  
-.profile {
-     padding-right: 70px;
-     padding-left:70px;
-     padding-top:90px;
-     padding-bottom:90px;
+/* .profile { */
+     /* padding-right: 70px; */
+     /* padding-left:70px; */
+     /* padding-top:90px; */
+     /* padding-bottom:90px; */
 
 }
 
-.box > img/*all childs*/{
+.box > img{
     width: 100%;
 }
 
 .box > span {
-  color: #006eff;
+  color: #55a3f1;
+  font-size: xx-small;
 }
+
     
-
-
-
 
 #stage {
   position: relative;
