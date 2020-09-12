@@ -1,0 +1,96 @@
+@font-face{
+    font-family: SourceSansPro;
+    src: url(SourceSansPro-SemiBold.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(191, 166, 231);
+    font-family: SourceSansPro;
+}
+.head{
+    text-align: center;
+    font-size: 5vw;
+    color: rgb(107, 103, 103);
+    
+}
+.profile{
+    position: relative;
+    width: 70vw;
+    margin: 50px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.profile .list{
+    display: block;
+    list-style: none;
+    background: rgb(38, 19, 145);
+    width: 100%;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.profile .btn{
+    display: flex;
+    background: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-style: none;
+    transition: 0.5s;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+.btn--active{
+    background: rgb(38, 19, 145);
+}
+.profile .details{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+    background: rgb(68, 68, 70);
+    color: blanchedalmond;
+    font-family: SourceSansPro;
+    box-sizing: content-box;
+    border-radius: 0 0 10px 10px;
+    font-size: large ;
+}
+.profile .list:nth-child(1)
+{
+    background: rgb(38, 19, 145,.8);
+}
+.profile .list:nth-child(2)
+{
+    background: rgb(38, 19, 145,.7);
+}
+.profile .list:nth-child(3)
+{
+    background: rgb(38, 19, 145,.6);
+}
+.profile .list:nth-child(4)
+{
+    background: rgb(38, 19, 145,.5);
+}
+.profile .list:nth-child(5)
+{
+    background: rgb(38, 19, 145,.4);
+}
+.profile .list:nth-child(6)
+{
+    background: rgb(38, 19, 145,.3);
+}
+.list .btn .number{
+    width: 100px;
+    text-align: left;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+.list .btn .name{
+    width: 400px;
+    text-align: left;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+.profile .list:hover{
+    outline: auto wheat;
+}
