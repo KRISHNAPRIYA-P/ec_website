@@ -1,5 +1,5 @@
 .container-tiles{
-  position: static;
+  position: relative;
 }
 body {
 
@@ -8,7 +8,10 @@ body {
 }
 
 .container-tiles{
-    background-color: #e1dbdb
+    background-color: #e1dbdb;
+    margin-top: 100px;
+    padding-top:50px;
+    padding-bottom: 50px;
 }
 
 .tiles{
@@ -19,13 +22,13 @@ body {
 
     /*padding:130px;*/
 }
-hr{
+/* hr{
   border:1px solid black;
   width: 27rem;
   background-color: black;
   margin-top:100px;
-  margin-bottom: 100px;
-}
+  margin-bottom: 70px;
+} */
 
 .zone {
   display: grid;
@@ -83,16 +86,16 @@ hr{
   width: 100%;
   height: 80vh;
   color: #FF0000;
-  padding: 30px;
+  padding: 2.5vw;
 }
 
 
 .stage .slide {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 
@@ -106,6 +109,10 @@ hr{
 
 .stage .slide .contents {
   position: relative;
+  /* display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top:auto; */
 }
 .stage .slide .contents h1 {
   text-align: center;
