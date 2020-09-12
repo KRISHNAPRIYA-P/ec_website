@@ -2,7 +2,9 @@
   position: static;
 }
 body {
-  margin: auto 0px;
+
+  margin: 0 0;
+
 }
 
 .container-tiles{
@@ -11,8 +13,10 @@ body {
 
 .tiles{
     display:grid;
-    gap:90px ;
-    grid-template-columns: repeat(auto-fill, minmax(350px,auto));
+
+    gap:90px;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+
     /*padding:130px;*/
 }
 hr{
@@ -67,96 +71,91 @@ hr{
   font-weight: bolder;
   font-family:'SourceCodePro-SemiBold.ttf';
 }
+.box {
+  text-align: center;
+}
 
     
 
-#stage {
+.stage {
   position: relative;
-  padding: 2%;
-  height: 80vh;
-}
-
-#stage .slide {
-  position: absolute;
+  box-sizing: border-box;
   width: 100%;
   height: 80vh;
+  color: #FF0000;
+  padding: 30px;
 }
-#stage .slide img {
-  width: 95%;
-  height: 80vh;
+
+
+.stage .slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
+
+.stage .slide .background {
+  position: absolute;
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.stage .slide .contents {
+  position: relative;
+}
+.stage .slide .contents h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.stage .slide .contents h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.stage .slide .contents .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stage .slide .contents .icons .icon {
+  display: flex;
+  align-items: center;
+}
+
+.stage .slide .contents .icons .icon img {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;  
+}
+
+.stage .slide .contents .icons .icon h3 {
+  font-size: 1.4rem;
+}
+
 @font-face {
   font-family: SourceCodePro-SemiBold;
   src: url(SourceCodePro-SemiBold.ttf);
 }
-.slide h1 {
-  font-family: SourceCodePro-SemiBold;
-  font-size: 3vw;
-  position: absolute;
-  color: red;
-  z-index: 20;
-  top: 18%;
-  left: 35%;
-  text-shadow: 1px 1px 1px #ffffff;
-}
-.slide h2 {
-  font-family: SourceCodePro-SemiBold;
-  font-size: 2vw;
-  position: absolute;
-  color: red;
-  z-index: 20;
-  top: 30%;
-  left: 25%;
-  text-shadow: 1px 1px 1px #ffffff;
-}
-.slide .image img {
-  position: absolute;
-  max-width: 2%;
-  max-height: 3%;
-  z-index: 20;
-  top: 50vh;
-  left: 35%;
-}
-.image h3 {
-  font-family: SourceCodePro-SemiBold;
-  font-size: 1vw;
-  position: absolute;
-  color: red;
-  z-index: 20;
-  top: 48vh;
-  left: 37.5%;
-  text-shadow: 1px 1px 1px #ffffff;
-}
-.mail img {
-  position: absolute;
-  max-width: 2%;
-  max-height: 3%;
-  z-index: 20;
-  top: 63.5%;
-  left: 45%;
-}
-.mail h3 {
-  font-family: SourceCodePro-SemiBold;
-  font-size: 1vw;
-  position: absolute;
-  color: red;
-  z-index: 20;
-  top: 60%;
-  left: 47.5%;
-  text-shadow: 1px 1px 1px #ffffff;
-}
 
-#stage .slide:nth-of-type(1) {
+
+.stage .slide:nth-of-type(1) {
   animation-name: fader;
   animation-delay: 4s;
   animation-duration: 1s;
   z-index: 20;
 }
 
-#stage .slide:nth-of-type(2) {
+.stage .slide:nth-of-type(2) {
   z-index: 10;
 }
-#stage .slide:nth-of-type(n + 3) {
+.stage .slide:nth-of-type(n + 3) {
   display: none;
 }
 
@@ -169,3 +168,28 @@ hr{
   }
 }
 
+
+@media (max-width: 600px) {
+  .stage .slide .contents h1 {
+    font-size: 2rem;
+  }
+  
+  .stage .slide .contents h2 {
+    font-size: 1.65rem;
+  }
+
+  .stage .slide .contents .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stage .slide .contents .icons .icon h3 {
+    font-size: 1rem;
+  }
+  .stage .slide .contents .icons .icon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;  
+  }
+  
+}

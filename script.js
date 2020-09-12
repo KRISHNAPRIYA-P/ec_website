@@ -1,7 +1,7 @@
 window.addEventListener(
   'DOMContentLoaded',
   function (e) {
-    var stage = document.getElementById('stage');
+    var stage = document.getElementsByClassName('stage')[0];
     var fadeComplete = function (e) {
       stage.appendChild(arr[0]);
     };
