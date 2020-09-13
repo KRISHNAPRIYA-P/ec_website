@@ -6,7 +6,12 @@ body {
   margin: 0 0;
 
 }
-
+.slide{
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
 .container-tiles{
     background-color: #e1dbdb;
     margin-top: 100px;
@@ -22,13 +27,13 @@ body {
 
     /*padding:130px;*/
 }
-/* hr{
+hr{
   border:1px solid black;
   width: 27rem;
   background-color: black;
-  margin-top:100px;
+  margin-top:150px;
   margin-bottom: 70px;
-} */
+}
 
 .zone {
   display: grid;
@@ -70,7 +75,7 @@ body {
 
 .box > span {
   text-align: center;
-  color: #0a0874;
+  color: #2094FF;
   font-size:small;
   font-weight: bolder;
   font-family:'SourceCodePro-SemiBold.ttf';
